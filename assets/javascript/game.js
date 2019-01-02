@@ -18,11 +18,11 @@ $(document).ready(function() {
 
     var userTotals = 0;
     var wins = 0;
-    var lossses = 0;
+    var losses = 0;
 
     //Appending the results for the wins/losses
-    $('pointWins').text(wins);
-    $('pointLosses').text(losses);
+    $("pointWins").text(wins);
+    $("pointLosses").text(losses);
 
     // Function to reset the game
     function reset() {
@@ -33,25 +33,25 @@ $(document).ready(function() {
         var gem3 = Math.floor(Math.random()*11+1);
         var gem4 = Math.floor(Math.random()*11+1);
         userTotals = 0;
-        $('#pointsTotal').text(userTotals);
+        $("#pointsTotal").text(userTotals);
     }
 
     // Times won are added to userTotals
     function won() {
         wins++;
-        $('#pointWins').text(wins);
-        reset()
+        $("#pointWins").text(wins);
+        reset();
     }
 
     // Times lost are added to the userTotals
     function lost() {
         losses++;
-        $('#pointLosses').text(lossses);
-        reset()
+        $("#pointLosses").text(lossses);
+        reset();
     }
 
     // Event setup for clicking the gems
-    $('#red-gem').on('click', function() {
+    $("#red-gem").on("click", function() {
         userTotals = userTotals + gem1;
         $("#pointsTotal").text(userTotals);
             if (userTotals == computerChoice) {
@@ -62,7 +62,7 @@ $(document).ready(function() {
             }
     });
 
-    $('#orange-gem').on ('click', function() {
+    $("#orange-gem").on("click", function() {
         userTotals = userTotals + gem2;
         $("#pointsTotal").text(userTotals);
             if (userTotals == computerChoice) {
@@ -73,7 +73,7 @@ $(document).ready(function() {
             }
     });
 
-    $('#green-gem').on ('click', function() {
+    $("#green-gem").on("click", function() {
         userTotals = userTotals + gem3;
         $("#pointsTotal").text(userTotals);
             if (userTotals == computerChoice) {
@@ -84,7 +84,7 @@ $(document).ready(function() {
             }
     });
 
-    $('#blue-gem').on ('click', function() {
+    $("#blue-gem").on("click", function() {
         userTotals = userTotals + gem4;
         $("#pointsTotal").text(userTotals);
             if (userTotals == computerChoice) {
