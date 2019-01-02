@@ -6,52 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <script src="assets/javascript/game.js"></script>
-
+    
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+    
 
 </head>
 
 <body>
-    <h1><div class="mx-auto bg-warning" style="width:200px">The Crystals Collector</div></h1>
-    <div class="alert alert-success w-75 mx-auto" role="alert">
+        <h1><div class="mx-auto bg-warning" style="width:200px">The Crystals Collector</div></h1>
+        <div class="alert alert-success w-75 mx-auto" role="alert">
         <h4 class="alert-heading">Instructions:</h4>
-        <p>Insert text here </p>
+        <p>You will be given a random number at the start of the game.</p>
+        <p>By clicking each of the crystals, you will add a specific amount of points to your total score.</p>
+        <p>You won't be able to know in advance what that specific amount is.</p>
+        
+
+        You goal is to figure out how much points each crystal is worth and match your total score to the number 
+        shown. 
+
+        <p>Each time the game restars, the value of each crystal will reset.</p>
         <hr>
-            <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
-    </div>
+            <p class="mb-0">Good luck!!</p>
+        </div>
 
-    <div class="clearfix w-75 mx-auto winLoss">
-            <h2>
-                <span class="float-left bg-info">Match this number: 
-                    <p>&nbsp;</p>
-                    <p class="number2Match text-center"><br>
-                </span>
-            </h2>
+        <!-- Make the heigh of the number2Match to match the win-loss section -->
+        <div class="clearfix w-75 mx-auto winLoss">
+                <h3>
+                    <span class="float-left bg-info">Match this number: 
+                        <p>&nbsp;</p>
+                        <p class="number2Match text-center"><br>
+                    </span> 
+                </h3>
 
-            <h2>
-                <span class="float-right bg-info">Wins: 
-                    <p class="pointWins"></p>
-                    Losses: <p class="pointLosses"></p>
-                </span> 
-            </h2>
-    </div>
+                <h3>
+                    <span class="float-right bg-info">Wins: 
+                        <p class="pointWins">0</p>
+                        Losses: <p class="pointLosses">0</p>
+                    </span> 
+                </h3>
+        </div>
 
-    <div class="row gems">
-        <img src="assets/images/red-gem.png" class="gem-image" id="red-gem" alt="Red Gem">
-        <img src="assets/images/orange-gem.png" class="gem-image" id="orange-gem" alt="Orange Gem">
-        <img src="assets/images/green-gem.png" class="gem-image" id="green-gem" alt="Green Gem">
-        <img src="assets/images/blue-gem.png" class="gem-image" id="blue-gem" alt="Blue Gem">
-    </div>
+        <div class="row gems">
+            <img src="assets/images/red-gem.png" class="gem-image" id="red-gem" alt="Red Gem">
+            <img src="assets/images/orange-gem.png" class="gem-image" id="orange-gem" alt="Orange Gem">
+            <img src="assets/images/green-gem.png" class="gem-image" id="green-gem" alt="Green Gem">
+            <img src="assets/images/blue-gem.png" class="gem-image" id="blue-gem" alt="Blue Gem">
+        </div>
 
-    <!-- Move this at the bottom of the page. Background Image -->
-     <a href="http://www.freepik.com">Background image designed by rawpixel.com / Freepik</a>
+        <div class="userTotals">
+            <h3 class="bg-info text-white w-75 mx-auto">
+               Total points so far:<span id="pointsTotal"></span>
+            </h3>
+        </div>
 
-     <!-- Bootstrap-related JS -->
-     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-</body>
+        <!-- Move this at the bottom of the page. Background Image -->
+        <div class="w-75 mx-auto">
+            <br><br>
+            <a href="http://www.freepik.com">Background image designed by rawpixel.com / Freepik</a>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        </div>
+
+        <!-- Bootstrap-related JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     
+        <script src="assets/javascript/game.js"></script>
+
+    </body>
 
 </html>
