@@ -4,3 +4,26 @@ body {
     background-position: 0 0;
     background-size: cover;
 }
+
+/* In case you need Google fonts, 
+
+font-family: 'Press Start 2P', cursive;
+
+*/
+
+h1 {
+   padding-top: 10px;
+}
+
+/* .winLoss {
+    font-family: 'Press Start 2P', cursive;
+} */
+
+.gems {
+    justify-content: center;
+    margin: 10px;
+}
+
+.gem-image {
+    height: 150px;
+}

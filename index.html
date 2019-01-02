@@ -5,15 +5,53 @@
     <title>The Crystals Collector</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="assets/javascript/game.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
 </head>
 
 <body>
+    <h1><div class="mx-auto bg-warning" style="width:200px">The Crystals Collector</div></h1>
+    <div class="alert alert-success w-75 mx-auto" role="alert">
+        <h4 class="alert-heading">Instructions:</h4>
+        <p>Insert text here </p>
+        <hr>
+            <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+    </div>
+
+    <div class="clearfix w-75 mx-auto winLoss">
+            <h2>
+                <span class="float-left bg-info">Match this number: 
+                    <p>&nbsp;</p>
+                    <p class="number2Match text-center"><br>
+                </span>
+            </h2>
+
+            <h2>
+                <span class="float-right bg-info">Wins: 
+                    <p class="pointWins"></p>
+                    Losses: <p class="pointLosses"></p>
+                </span> 
+            </h2>
+    </div>
+
+    <div class="row gems">
+        <img src="assets/images/red-gem.png" class="gem-image" id="red-gem" alt="Red Gem">
+        <img src="assets/images/orange-gem.png" class="gem-image" id="orange-gem" alt="Orange Gem">
+        <img src="assets/images/green-gem.png" class="gem-image" id="green-gem" alt="Green Gem">
+        <img src="assets/images/blue-gem.png" class="gem-image" id="blue-gem" alt="Blue Gem">
+    </div>
 
     <!-- Move this at the bottom of the page. Background Image -->
      <a href="http://www.freepik.com">Background image designed by rawpixel.com / Freepik</a>
 
-    
+     <!-- Bootstrap-related JS -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 
 </html>
